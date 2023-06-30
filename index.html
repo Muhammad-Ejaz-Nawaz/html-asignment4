@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Asignment</title>
+</head>
+<style>
+    td {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <center>
+        <h2>Nested Table</h2>
+        <table width="700px" height="200px" border="1">
+            <tr>
+                <td>Header Column1</td>
+                <td>Header Column2</td>
+                <td>Header Column3</td>
+                <td>Header Column4</td>
+            </tr>
+            <tr>
+                <td>Row 2 Item 1</td>
+                <td>Row 2 Item 2</td>
+                <td rowspan="2">Row 2 Nasted Table1
+                    <table border="1">
+                        <tr>
+                            <td>Row 1 Header</td>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 Header</td>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 3 Header</td>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 2 Item 4<br> A Second Line</td>
+
+            </tr>
+            <tr>
+                <td>Row 3 Nasted Table2
+                    <table border="1">
+                        <tr>
+                            <td>Row 1 Header</td>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 Header</td>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td>Row 3 Item 2</td>
+                <td rowspan="2">Row 3 Item 3</td>
+            </tr>
+            <tr>
+                <td>Row 4 Item 1</td>
+                <td>Row 4 Item 2</td>
+                <td>Row 4 Item 3</td>
+            </tr>
+            <tr>
+                <td colspan="4">Row 5 Last row of outer table</td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <hr>
+    <br>
+    <!-- 1st Table Cod End and 2nd Table Coding Start -->
+    <center>
+        <table width="700px" height="200px" border="1">
+            <tr>
+                <td rowspan="3">Day</td>
+                <td colspan="3">Seminar</td>
+            </tr>
+            <tr>
+                <td colspan="2">Schedule</td>
+                <td rowspan="2">Topic</td>
+            </tr>
+            <tr>
+                <td>Begin</td>
+                <td>End</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 am</td>
+                <td rowspan="2">5:00 pm</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity DTD and Relex NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 am</td>
+                <td>11:00 am</td>
+                <td rowspan="3" style="border: none;">
+                    <table width="100%" height="100%" border="1">
+                        <tr>
+                            <td>XPath</td>
+                        </tr>
+                        <tr>
+                            <td>XSL Formationg Objects</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>11:00 am</td>
+                <td>2:00 pm</td>
+            </tr>
+            <tr>
+                <td>2:00 pm</td>
+                <td>5:00 pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 am</td>
+                <td>12:00 pm</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <!-- 2nd Table Cod End and 3rd Table Coding Start -->
+        <table width="700px" height="200px" border="1">
+            <tr>
+                <td colspan="6">Ahtletics day time table</td>
+            </tr>
+            <tr>
+                <td>Area</td>
+                <td>10 am - 11 am</td>
+                <td>11 am - 12 pm</td>
+                <td>12 pm - 1pm</td>
+                <td>1 pm - 2 pm</td>
+                <td>2 pm - 3 pm</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Track</td>
+                <td>400 m</td>
+                <td>200 m</td>
+                <td rowspan="3">Lunch</td>
+                <td>800 m</td>
+                <td>100 m</td>
+            </tr>
+            <tr>
+                <td>Hundles</td>
+                <td>1500 m</td>
+                <td>Free</td>
+                <td>80 m</td>
+            </tr>
+            <tr>
+                <td>Field</td>
+                <td>Discus</td>
+                <td>Javelin</td>
+                <td>Shot put</td>
+                <td>Hammer throw</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <!-- 3nd Table Cod End and 4rd Table Coding Start -->
+        <table width="700px" height="200px" border="1" bgcolor="lightgreen">
+            <tr>
+                <td rowspan="4">S.No</td>
+                <td rowspan="4">Name</td>
+                <td colspan="6">Subject</td>
+                <td rowspan="4">Total</td>
+            </tr>
+            <tr>
+                <td colspan="2">Science</td>
+                <td colspan="2">Social</td>
+                <td colspan="2">Computer</td>
+            </tr>
+            <tr>
+                <td colspan="6">Marks</td>
+            </tr>
+            <tr>
+                <td>Internet</td>
+                <td>Final</td>
+                <td>Internet</td>
+                <td>Final</td>
+                <td>Internet</td>
+                <td>Final</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Bikash</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Saleem</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Bilal</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Munir</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Abbas</td>
+                <td>10</td>
+                <td>12</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>43</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td colspan="9">Total</td>
+            </tr>
+        </table>
+
+    <br>
+    <hr>
+    <br>
+    <h3>Muhammad Ejaz Nawaz</h3>
+    <p>Web and App 117316 <br>
+Islamic Research Center of Dawatislami Karachi
+    </p>
+</center>
+</body>
+
+</html>
